@@ -138,17 +138,17 @@
             <div class="gender">
                 Gender*
                 <label for="male">Male</label>
-                <input type="radio" class="#">
-                <label for="Female">Female</label>
-                <input type="radio" class="#">
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
             </div>
 
             <div class="Handicapped">
                 Physically Handicapped*
-                <label for="yes">Yes</label>
-                <input type="radio" class="#">
-                <label for="No">No</label>
-                <input type="radio" class="#">
+                <label for="h-yes">Yes</label>
+                <input type="radio" name="handi" id="h-yes">
+                <label for="h-No">No</label>
+                <input type="radio" name="handi" id="h-no">
             </div>
 
             <div class="email">
@@ -185,10 +185,10 @@
             <div class="identification-num">
                 Identification Number*
                 <div class="identification-num-ifiled">
-                    <label for="" class="#">
+                    <label for="idnum" class="#">
                         Identification No. (Must be 10 digits for new NID or 17 digits for old NID. If your National ID is 13 digits, then please add your birth year with the ID as prefix. Example: 1980XXXXXXXXXXXXX)*
                     </label>
-                    <input type="text" class="#" id="#">
+                    <input type="text" id="idnum">
                 </div>
             </div>
 
@@ -269,26 +269,22 @@
                 </div>
             </div>
 
-            <div class="gender">
+            <div class="computer">
                 Have any computer*
                 <label for="yes">Yes</label>
-                <input type="radio" class="#">
+                <input type="radio" name="com" id="yes">
                 <label for="No">No</label>
-                <input type="radio" class="#">
+                <input type="radio" name="com" id="No">
             </div>
 
-            <div class="photo-button">
-                Photograph (<span>type must be jpg or jpeg or png. Maximum file size 2 mb.</span>)*
-                <div class="photo-btn">
-                    <a href="#" class="btn">Choose File</a>
-                </div>
+            <div class="photo">
+                <p>Photograph (<span>type must be jpg or jpeg or png. Maximum file size 2 mb.</span>)*</p>
+                <input type="file" name="photo" id="f-photo">
             </div>
 
-            <div class="signature-button">
-                Signature (<span>File type must be jpg or jpeg or png. Maximum file size 2 mb.</span>)*
-                <div class="signature-btn">
-                    <a href="#" class="btn">Choose File</a>
-                </div>
+            <div class="signature">
+                <p>Signature (<span>File type must be jpg or jpeg or png. Maximum file size 2 mb.</span>)*</p>
+                <input type="file" name="sig" id="f-sig">
             </div>
             
             <div class="submit-btn-area">
